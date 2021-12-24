@@ -16,3 +16,26 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/products', function () {
+    return view('Products.Index');
+});
+
+// admin
+Route::get('/admin', function () {
+    return view('Admin.Home');
+});
+Route::get('/adminproducts', function () {
+    return view('Admin.Products');
+});
+Route::get('/addproducts', function () {
+    return view('Admin.CreateProducts');
+});
+Route::get('/editproducts', function () {
+    return view('Admin.UpdateProducts');
+});
+

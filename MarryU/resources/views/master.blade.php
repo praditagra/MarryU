@@ -11,8 +11,8 @@
       <meta name="keywords" content="" />
       <meta name="description" content="" />
       <meta name="author" content="" />
-      <link rel="shortcut icon" href="images/favicon.png" type="">
-      <title>MarryU</title>
+      <link rel="shortcut icon" href="{{asset('Template/images/favicon.png')}}" type="">
+            <title>MarryU</title>
       <!-- bootstrap core css -->
       <link rel="stylesheet" type="text/css" href="{{asset('Template/css/bootstrap.css')}}" />
       <!-- font awesome style -->
@@ -22,9 +22,6 @@
       <!-- responsive style -->
       <link href="{{asset('Template/css/responsive.css')}}" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   </head>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>@yield('page')</title>
   </head>
 
@@ -34,7 +31,6 @@
     @yield('webpage')
 
     @include('Partials.Footer')
-
 
     <!-- jQery -->
     <script src="{{asset('Template/js/jquery-3.4.1.min.js')}}"></script>
