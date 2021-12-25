@@ -1,20 +1,28 @@
-@extends('Masteradmin')
+@extends('Master')
 
-@section('konten')
+@section('profile')
+active
+@endsection
 
+@section('webpage')
+
+<section class="product_section layout_padding">
+    <div class="container">
+        <div class="heading_container heading_center">
+            <h2>
+                My <span>Profile</span>
+            </h2>
+        </div>
         <!-- konten -->
-        <div class="content">
+        <div class="content shadow p-3 mb-5 bg-body rounded">
             <div class="row">
-                <div class="col">
-                    <h3 class="description">Edit Profile
-                        
+                <div class="col"> 
                     <div class="container rounded bg-white mt-5">
                         <div class="row">
                             <div class="col-md-4 border-right">
                                 <div class="d-flex flex-column align-items-center text-center p-3 py-5">
                                     <img class="rounded-circle mt-3" src="{{asset('Template/images/profile.jpg')}}" width="200">
                                     <div class="form-group">
-                                        <label for="exampleFormControlFile1">Upload New Profile</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1">
                                     </div>  
                                     
@@ -56,6 +64,9 @@
                 </div>
             </div>
         </div>
+</div>
+</div>
+</section>
                                         
 
         

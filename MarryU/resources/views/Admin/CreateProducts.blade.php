@@ -1,6 +1,6 @@
 @extends('Masteradmin');
-@section('page')
-Products
+@section('products')
+active
 @endsection
 @section('konten')
         <!-- konten -->

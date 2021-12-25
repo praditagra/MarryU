@@ -1,7 +1,7 @@
 @extends('Master')
 
-@section('page')
-Home
+@section('products')
+active
 @endsection
 
 @section('webpage')

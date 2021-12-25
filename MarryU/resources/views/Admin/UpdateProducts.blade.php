@@ -1,4 +1,8 @@
-@extends('masteradmin');
+@extends('Masteradmin')
+@section('products')
+active
+@endsection
+@section('konten')
         <!-- konten -->
         <div class="content">
             <div class="row">
@@ -96,17 +100,4 @@
             </div>
         </div>
         
-
-        <!-- footer -->
-        <footer class="footer" style="position: absolute; bottom: 0; width: -webkit-fill-available;">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="credits ml-auto">
-                    <span class="copyright"> © 2020, made with <i class="fa fa-heart heart"></i> by Group2</span>
-                </div>
-            </div>
-        </div>
-    </footer>
-</div>
-</div>
-
+@endsection

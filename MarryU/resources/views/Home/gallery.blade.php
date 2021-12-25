@@ -1,7 +1,7 @@
 @extends('Master')
 
-@section('page')
-Home
+@section('gallery')
+active
 @endsection
 
 @section('webpage')

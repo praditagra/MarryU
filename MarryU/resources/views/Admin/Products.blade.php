@@ -1,6 +1,6 @@
-@extends('Masteradmin');
-@section('page')
-Products
+@extends('Masteradmin')
+@section('products')
+active
 @endsection
 @section('konten')
 
@@ -19,7 +19,7 @@ Products
                             <div class="card-body">
                                 <h5 class="card-title">Men's Shirt</h5>
                                 <p class="card-text">$75</p>
-                                <a href="/editproducts" class="btn btn-warning">Edit</a>
+                                <a href="/admin/products/update" class="btn btn-warning">Edit</a>
                                 <a href="#" class="btn btn-danger">Delete</a>
                             </div>
                         </div>
@@ -29,7 +29,7 @@ Products
                         <div class="card-body">
                             <h5 class="card-title">Men's Shirt</h5>
                             <p class="card-text">$75</p>
-                            <a href="/editproducts" class="btn btn-warning">Edit</a>
+                            <a href="/admin/products/update" class="btn btn-warning">Edit</a>
                             <a href="#" class="btn btn-danger">Delete</a>
                         </div>
                         </div>
@@ -39,7 +39,7 @@ Products
                         <div class="card-body">
                             <h5 class="card-title">Men's Shirt</h5>
                             <p class="card-text">$75</p>
-                            <a href="/editproducts" class="btn btn-warning">Edit</a>
+                            <a href="/admin/products/update" class="btn btn-warning">Edit</a>
                             <a href="#" class="btn btn-danger">Delete</a>
                         </div>
                         </div>
@@ -49,7 +49,7 @@ Products
                         <div class="card-body">
                             <h5 class="card-title">Men's Shirt</h5>
                             <p class="card-text">$75</p>
-                            <a href="/editproducts" class="btn btn-warning">Edit</a>
+                            <a href="/admin/products/update" class="btn btn-warning">Edit</a>
                             <a href="#" class="btn btn-danger">Delete</a>
                         </div>
                     </div>

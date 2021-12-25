@@ -55,8 +55,7 @@ h2 {
 .heading_container h2 {
     position: relative;
     margin-bottom: 0;
-    font-size: 3.5rem;
-    font-weight: bold;
+    font-size: 2rem;
 }
 
 .heading_container h2::after {
@@ -433,7 +432,7 @@ a:focus {
 .arrival_section {
     background: linear-gradient(to right, #A78758, #C99850);
     color: white;
-    height: 550px;
+    height: 470px;
     margin-bottom: 1opx;
 }
 
@@ -540,7 +539,6 @@ a:focus {
 }
 
 .arrival_section .box {
-    padding: 120px 45px;
     position: relative;
 }
 

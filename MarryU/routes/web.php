@@ -18,38 +18,52 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
-    return view('login');
+    return view('Home.login');
 });
 
 Route::get('/loginadmin', function () {
-    return view('loginadmin');
+    return view('Home.loginadmin');
 });
 
 Route::get('/registrasi', function () {
-    return view('registrasi');
+    return view('Home.registrasi');
 });
 
 Route::get('/products', function () {
-    return view('Products.Index');
+    return view('Home.products');
 });
 
 Route::get('/gallery', function () {
-    return view('gallery');
+    return view('Home.gallery');
+});
+Route::get('/cart', function () {
+    return view('Home.booking');
+});
+
+Route::get('/profile', function () {
+    return view('Home.profile');
+});
+
+Route::get('/contact', function () {
+    return view('Home.contact');
 });
 
 // admin
 Route::get('/admin', function () {
-    return view('Admin.Home');
+    return view('Admin.home');
 });
 Route::get('/admin/products', function () {
-    return view('Admin.Products');
+    return view('Admin.products');
 });
 Route::get('/admin/products/create', function () {
-    return view('Admin.CreateProducts');
+    return view('Admin.createproducts');
 });
-Route::get('/editproducts', function () {
-    return view('Admin.UpdateProducts');
+Route::get('/admin/products/update', function () {
+    return view('Admin.updateproducts');
 });
-Route::get('/profile', function () {
-    return view('Admin.Profile');
+Route::get('/admin/profile', function () {
+    return view('Admin.profile');
+});
+Route::get('/admin/about', function () {
+    return view('Admin.about');
 });

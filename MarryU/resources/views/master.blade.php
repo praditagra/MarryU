@@ -25,11 +25,11 @@
   </head>
 
   <body>
-    @include('Partials.Navbar')
+    @include('Partials.navbar')
     
     @yield('webpage')
 
-    @include('Partials.Footer')
+    @include('Partials.footer')
     <br>
 
     <!-- jQery -->
