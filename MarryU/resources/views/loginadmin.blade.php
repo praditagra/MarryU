@@ -29,16 +29,15 @@
                             <form action="#" class="signin-form">
                                 <div class="form-group mb-3">
                                     <label class="label" for="name">Username</label>
-                                    <input type="text" id="id_user" name="id_user" class="form-control" placeholder="Username" required>
+                                    <input type="text" class="form-control" placeholder="Username" required>
                                 </div>
 
                                 <div class="form-group mb-3">
                                     <label class="label" for="password">Kata Sandi</label>
-                                    <input type="password" class="form-control" name="kata_sandi" id="kata_sandi" placeholder="Kata Sandi" required>
+                                    <input type="password" class="form-control" placeholder="Kata Sandi" required>
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" class="form-control btn btn-primary rounded submit px-3">
-                                    <a style="color:white" href="/admin">Sign In</a></button>
+                                    <button type="submit" class="form-control btn btn-primary rounded submit px-3">Sign In</button>
                                 </div>
                                 <div class="form-group d-md-flex">
                                     <div class="w-50 text-left">
@@ -56,10 +55,8 @@
                             </form>
 
                             <!-- ke halaman registrasi -->
-                            <p class="text-center">Belum Punya Akun?
-                                <a href="/registrasi">Sign Up</a></p>
-                            <p class="text-center">Login Sebagai
-                                <a href="/loginadmin">Admin</a></p>
+                            <p class="text-center">Login Sebagai 
+                                <a href="/login">User</a></p>
 
                                 <br>
                                 <p class="text-center"><a href="/">Kembali ke Landing Page</a></p>

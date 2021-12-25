@@ -21,21 +21,35 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/loginadmin', function () {
+    return view('loginadmin');
+});
+
+Route::get('/registrasi', function () {
+    return view('registrasi');
+});
+
 Route::get('/products', function () {
     return view('Products.Index');
+});
+
+Route::get('/gallery', function () {
+    return view('gallery');
 });
 
 // admin
 Route::get('/admin', function () {
     return view('Admin.Home');
 });
-Route::get('/adminproducts', function () {
+Route::get('/admin/products', function () {
     return view('Admin.Products');
 });
-Route::get('/addproducts', function () {
+Route::get('/admin/products/create', function () {
     return view('Admin.CreateProducts');
 });
 Route::get('/editproducts', function () {
     return view('Admin.UpdateProducts');
 });
-
+Route::get('/profile', function () {
+    return view('Admin.Profile');
+});

@@ -1,7 +1,5 @@
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <head>
       <!-- Basic -->
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,8 +9,7 @@
       <meta name="keywords" content="" />
       <meta name="description" content="" />
       <meta name="author" content="" />
-      <link rel="shortcut icon" href="{{asset('Template/images/favicon.png')}}" type="">
-            <title>MarryU</title>
+      <link rel="shortcut icon" href="{{asset('Template/images/logo.png')}}" type="">
       <!-- bootstrap core css -->
       <link rel="stylesheet" type="text/css" href="{{asset('Template/css/bootstrap.css')}}" />
       <!-- font awesome style -->
@@ -22,6 +19,8 @@
       <!-- responsive style -->
       <link href="{{asset('Template/css/responsive.css')}}" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
     <title>@yield('page')</title>
   </head>
 
@@ -31,6 +30,7 @@
     @yield('webpage')
 
     @include('Partials.Footer')
+    <br>
 
     <!-- jQery -->
     <script src="{{asset('Template/js/jquery-3.4.1.min.js')}}"></script>

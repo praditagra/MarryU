@@ -1,4 +1,4 @@
-@extends('Master');
+@extends('Master')
 
 @section('page')
 Home
@@ -33,8 +33,8 @@ Home
                                  <p>
                                     Hari pernikahan adalah momen yang diimpikan oleh para calon pengantin. Setiap pasangan pasti ingin merealisasikan konsep pernikahan yang telah lama diidamkan agar berkesan seumur hidupnya. Maka dari itu, diperlukan pertimbangan yang matang saat akan menentukan gaya pernikahan agar tidak menyesal.
                                  </p>
-                                 <div class="btn-box">
-                                    <a href="" class="btn1">
+                                 <div class="btn-box btn-p">
+                                    <a href="/products" class="btn1">
                                     Shop Now
                                     </a>
                                  </div>
@@ -45,7 +45,7 @@ Home
                   </div>
 
                   <!-- Caraousell slide 2 -->
-                  <div class="carousel-item ">
+                  <div class="carousel-item  ">
                      <div class="container ">
                         <div class="row">
                            <div class="col-md-7 col-lg-6 ">
@@ -368,19 +368,24 @@ Home
                </div>
                <div class="row">
                   <div class="col-md-6 ml-auto">
-                     <div class="heading_container remove_line_bt">
-                        <h2>
-                           #OurCategories
-                        </h2>
+                     <div class="">
+                        <div class="heading_container">
+                           <h2>
+                              #OurCategories
+                           </h2>
+                        </div>
+                        <p style="margin-top: 20px;margin-bottom: 30px;">
+                           Kami memiliki ratusan produk yang telah disusun menjadi beberapa kategori
+                           untuk memundahkan Anda dalam pencarian produk yang sesuai dengan tema
+                           pernikahan aAnda ingin melihat produk kami berdasarkan kategori?
+                        </p> </div>
+                        <div class="btn-box">
+                           <a href="/products" class="btn1">
+                              Shop Now
+                           </a>
+                        </div>
+
                      </div>
-                     <p style="margin-top: 20px;margin-bottom: 30px;">
-                        Kami memiliki ratusan produk yang telah disusun menjadi beberapa kategori
-                        untuk memundahkan Anda dalam pencarian produk yang sesuai dengan tema
-                        pernikahan aAnda ingin melihat produk kami berdasarkan kategori?
-                     </p>
-                     <a href="">
-                     Shop Now
-                     </a>
                   </div>
                </div>
             </div>
@@ -402,10 +407,10 @@ Home
                      <div class="option_container">
                         <div class="options">
                            <a href="" class="option1">
-                           Men's Shirt
+                           Add To Cart
                            </a>
                            <a href="" class="option2">
-                           Rent Now
+                           Booking Now
                            </a>
                         </div>
                      </div>
@@ -422,6 +427,7 @@ Home
                      </div>
                   </div>
                </div>
+
                <div class="col-sm-6 col-md-4 col-lg-4">
                   <div class="box">
                      <div class="option_container">
@@ -430,57 +436,7 @@ Home
                            Add To Cart
                            </a>
                            <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/p2.png" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Men's Shirt
-                        </h5>
-                        <h6>
-                           $80
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="{{asset('Template/images/p3.png')}}" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Women's Dress
-                        </h5>
-                        <h6>
-                           $68
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
+                           Booking Now
                            </a>
                         </div>
                      </div>
@@ -497,6 +453,7 @@ Home
                      </div>
                   </div>
                </div>
+
                <div class="col-sm-6 col-md-4 col-lg-4">
                   <div class="box">
                      <div class="option_container">
@@ -505,57 +462,7 @@ Home
                            Add To Cart
                            </a>
                            <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="{{asset('Template/images/p5.png')}}" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Women's Dress
-                        </h5>
-                        <h6>
-                           $75
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="{{asset('Template/images/p6.png')}}" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Women's Dress
-                        </h5>
-                        <h6>
-                           $58
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
+                           Booking Now
                            </a>
                         </div>
                      </div>
@@ -572,6 +479,7 @@ Home
                      </div>
                   </div>
                </div>
+
                <div class="col-sm-6 col-md-4 col-lg-4">
                   <div class="box">
                      <div class="option_container">
@@ -580,57 +488,7 @@ Home
                            Add To Cart
                            </a>
                            <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="{{asset('Template/images/p8.png')}}" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Men's Shirt
-                        </h5>
-                        <h6>
-                           $65
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="{{asset('Template/images/p9.png')}}" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Men's Shirt
-                        </h5>
-                        <h6>
-                           $65
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
+                           Booking Now
                            </a>
                         </div>
                      </div>
@@ -647,6 +505,7 @@ Home
                      </div>
                   </div>
                </div>
+
                <div class="col-sm-6 col-md-4 col-lg-4">
                   <div class="box">
                      <div class="option_container">
@@ -655,7 +514,7 @@ Home
                            Add To Cart
                            </a>
                            <a href="" class="option2">
-                           Buy Now
+                           Booking Now
                            </a>
                         </div>
                      </div>
@@ -680,7 +539,7 @@ Home
                            Add To Cart
                            </a>
                            <a href="" class="option2">
-                           Buy Now
+                           Booking Now
                            </a>
                         </div>
                      </div>
@@ -699,7 +558,7 @@ Home
                </div>
             </div>
             <div class="btn-box">
-               <a href="">
+               <a href="/products">
                View All products
                </a>
             </div>
@@ -722,19 +581,19 @@ Home
                         <div class="img_container">
                            <div class="img-box">
                               <div class="img_box-inner">
-                                 <img src="{{asset('Template/images/client.jpg')}}" alt="">
+                                 <img src="{{asset('Template/images/user1.jpg')}}" alt="">
                               </div>
                            </div>
                         </div>
                         <div class="detail-box">
                            <h5>
-                              Anna Trevor
+                              Cici Cahya
                            </h5>
                            <h6>
                               Customer
                            </h6>
                            <p>
-                              Dignissimos reprehenderit repellendus nobis error quibusdam? Atque animi sint unde quis reprehenderit, et, perspiciatis, debitis totam est deserunt eius officiis ipsum ducimus ad labore modi voluptatibus accusantium sapiente nam! Quaerat.
+                              website ini memberikan saya pilihan dekorasi yang sangat cantik membuat pernikahan saya terlihat menyenangkan dan tidak terlupakan!
                            </p>
                         </div>
                      </div>
@@ -744,19 +603,19 @@ Home
                         <div class="img_container">
                            <div class="img-box">
                               <div class="img_box-inner">
-                                 <img src="{{asset('Template/images/client.jpg')}}" alt="">
+                                 <img src="{{asset('Template/images/user2.jpg')}}" alt="">
                               </div>
                            </div>
                         </div>
                         <div class="detail-box">
                            <h5>
-                              Anna Trevor
+                              Muhammad Bima
                            </h5>
                            <h6>
                               Customer
                            </h6>
                            <p>
-                              Dignissimos reprehenderit repellendus nobis error quibusdam? Atque animi sint unde quis reprehenderit, et, perspiciatis, debitis totam est deserunt eius officiis ipsum ducimus ad labore modi voluptatibus accusantium sapiente nam! Quaerat.
+                              Saya sempat bingung apa yang harus saya pakai saat pernikahan saya, namun website ini memberikan pilihan yang cukup banyak dan hal itu memberikan saya inspirasi mengenai apa yang saya pakai saat pernikahan
                            </p>
                         </div>
                      </div>
@@ -766,19 +625,19 @@ Home
                         <div class="img_container">
                            <div class="img-box">
                               <div class="img_box-inner">
-                                 <img src="{{asset('Template/images/client.jpg')}}" alt="">
+                                 <img src="{{asset('Template/images/user3.jpg')}}" alt="">
                               </div>
                            </div>
                         </div>
                         <div class="detail-box">
                            <h5>
-                              Anna Trevor
+                              Tiara Dewi
                            </h5>
                            <h6>
                               Customer
                            </h6>
                            <p>
-                              Dignissimos reprehenderit repellendus nobis error quibusdam? Atque animi sint unde quis reprehenderit, et, perspiciatis, debitis totam est deserunt eius officiis ipsum ducimus ad labore modi voluptatibus accusantium sapiente nam! Quaerat.
+                              Website ini cukup membantu saya saat mempersiapkan pesta pernikahan, saya jadi tidak bingung lagi mengenai tema apa yang harus saya pakai di pernikahan saya
                            </p>
                         </div>
                      </div>

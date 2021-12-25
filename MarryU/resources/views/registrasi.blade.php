@@ -21,7 +21,7 @@
                         <div class="login-wrap p-4 p-md-5">
                             <div class="d-flex">
                                 <div class="w-100">
-                                    <h3 class="mb-4">Sign In</h3>
+                                    <h3 class="mb-4">Sign Up</h3>
                                 </div>
                             </div>
 
@@ -29,16 +29,42 @@
                             <form action="#" class="signin-form">
                                 <div class="form-group mb-3">
                                     <label class="label" for="name">Username</label>
-                                    <input type="text" id="id_user" name="id_user" class="form-control" placeholder="Username" required>
+                                    <input type="text" class="form-control" name="id_user" id="id_user" placeholder="Username" required>
                                 </div>
 
                                 <div class="form-group mb-3">
-                                    <label class="label" for="password">Kata Sandi</label>
+                                    <label class="label" for="name">Nama</label>
+                                    <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama" required>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label class="label" for="name">E-mail</label>
+                                    <input type="text" class="form-control" name="email" id="email" placeholder="Email" required>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label class="label" for="name">No HP</label>
+                                    <input type="text" class="form-control" name="no_hp" id="no_hp" placeholder="No HP" required>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label class="label" for="name">Tanggal Lahir</label>
+                                    <input type="date" class="form-control" name="tanggal_lahir" id="tanggal_lahir" required>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label class="label" for="name">Kata Sandi</label>
                                     <input type="password" class="form-control" name="kata_sandi" id="kata_sandi" placeholder="Kata Sandi" required>
                                 </div>
+
+                                <div class="form-group mb-3">
+                                    <label class="label" for="name">Konfirmasi Kata Sandi</label>
+                                    <input type="password" class="form-control" name="kata_sandiConfirm" id="kata_sandiConfirm" placeholder="Konfirmasi Kata Sandi" required>
+                                </div>
+
+
                                 <div class="form-group">
-                                    <button type="submit" class="form-control btn btn-primary rounded submit px-3">
-                                    <a style="color:white" href="/admin">Sign In</a></button>
+                                    <button type="submit" class="form-control btn btn-primary rounded submit px-3">Sign Up</button>
                                 </div>
                                 <div class="form-group d-md-flex">
                                     <div class="w-50 text-left">
@@ -56,14 +82,10 @@
                             </form>
 
                             <!-- ke halaman registrasi -->
-                            <p class="text-center">Belum Punya Akun?
-                                <a href="/registrasi">Sign Up</a></p>
-                            <p class="text-center">Login Sebagai
-                                <a href="/loginadmin">Admin</a></p>
+                            <p class="text-center">Sudah Punya Akun? <a data-toggle="tab" href="/login">Sign In</a></p>
 
-                                <br>
+                            <br>
                                 <p class="text-center"><a href="/">Kembali ke Landing Page</a></p>
-
 
                         </div>
                     </div>
