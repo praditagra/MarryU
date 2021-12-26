@@ -21,7 +21,7 @@ class CreateAdminsTable extends Migration
             $table->date('tanggal_lahir');
             $table->string('foto_admin');
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('kata_sandi');
+            $table->string('password');
             $table->rememberToken();
             $table->timestamps();
         });

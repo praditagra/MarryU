@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,42 +17,30 @@ use App\Http\Controllers\UserController;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/login', function () {
-    return view('Home.login');
-});
-
-Route::get('/loginadmin', function () {
-    return view('Home.loginadmin');
-});
-
-Route::get('/registrasi', [UserController::class, "regist_index"])->name('Index.Regist');
-Route::post('/registrasi', [UserController::class, "regist"])->name('Regist');
-
-
-Route::get('/products', function () {
-    return view('Home.products');
-});
-
-Route::get('/gallery', function () {
-    return view('Home.gallery');
-});
-Route::get('/cart', function () {
-    return view('Home.booking');
-});
-
+#LOGIN AND REGISTER
+# 1 User
+Route::get('/registrasi', [UserController::class, "regist_index"])->name('Index.Regist')->middleware('guest');
+Route::post('/registrasi', [UserController::class, "regist"])->name('Regist')->middleware('guest');
+Route::get('/login', [UserController::class, "login_index"])->name('Index.Login')->middleware('guest');
+Route::post('/login', [UserController::class, "login"])->name('Login')->middleware('guest');
+Route::post('/logout', [UserController::class, "logout"])->name('Logout')->middleware('auth');
 Route::get('/profile', function () {
     return view('Home.profile');
 });
-
-Route::get('/contact', function () {
-    return view('Home.contact');
+# 2 Admin
+Route::get('/loginadmin', [AdminController::class, "login_index"])->name('Admin.Index.Login')->middleware('guest');
+Route::post('/loginadmin', [AdminController::class, "login"])->name('Admin.Login')->middleware('guest');
+Route::get('/admin/profile', function () {
+    return view('Admin.profile');
 });
 
-// admin
-Route::get('/admin', function () {
-    return view('Admin.home');
+
+#PRODUCTS
+# 1 User
+Route::get('/products', function () {
+    return view('Home.products');
 });
+# 2 Admin
 Route::get('/admin/products', function () {
     return view('Admin.products');
 });
@@ -61,9 +50,33 @@ Route::get('/admin/products/create', function () {
 Route::get('/admin/products/update', function () {
     return view('Admin.updateproducts');
 });
-Route::get('/admin/profile', function () {
-    return view('Admin.profile');
+
+#GALERIES
+# 1 User
+Route::get('/gallery', function () {
+    return view('Home.gallery');
 });
+# 2 Admin
+
+
+#BOOKINGS
+# 1 User
+Route::get('/cart', function () {
+    return view('Home.booking');
+});
+# 2 Admin
+Route::get('/admin', function () {
+    return view('Admin.home');
+});
+
+
+#CONTACT
+# 1 User
+Route::get('/contact', function () {
+    return view('Home.contact');
+});
+
+# 2 Admin
 Route::get('/admin/about', function () {
     return view('Admin.about');
 });

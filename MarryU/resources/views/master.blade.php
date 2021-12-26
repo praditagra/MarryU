@@ -21,6 +21,7 @@
       <link href="{{asset('Template/css/responsive.css')}}" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+      
 
     <title>@yield('page')</title>
   </head>

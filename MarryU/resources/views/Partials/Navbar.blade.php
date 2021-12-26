@@ -23,6 +23,8 @@
                         <a class="nav-link" href="/contact">Contact</a>
                     </li>
 
+                   
+                    @auth
                     <li>
                         <div>
                             <a class="btn" href="/cart" >
@@ -30,21 +32,29 @@
                             </a>
                         </div>
                     </li>
-
                     <li>
                         <div class="dropdown show">
                             <a class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-user-circle"></i>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="/profile">Profile</a>
-                                <a class="dropdown-item" href="#">Logout</a>
+                                <a class="dropdown-item" href="/profile" style="text-transform: capitalize;">{{ auth()->user()->username }}</a>
+                                <a class="dropdown-item" href="#">MyBooking</a>
+                                <hr class="dropdown-divider">
+                                <form action="/logout" method="post">
+                                    @csrf
+                                    <button type="submit" class="dropdown-item">Logout</button>
+                                </form>
                             </div>
                         </div>
                     </li>
-
-
-
+                    
+                    @else
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
+                    @endauth
+                    
                 </div>
             </nav>
             </div>

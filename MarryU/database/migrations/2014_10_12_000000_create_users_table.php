@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->date('tanggal_lahir');
             $table->string('foto_user');
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('kata_sandi');
+            $table->string('password');
             $table->rememberToken();
             $table->timestamps();
         });

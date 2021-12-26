@@ -79,9 +79,9 @@
                                 </div>
 
                                 <div class="form-group mb-3">
-                                    <label class="label" for="kata_sandi">Kata Sandi</label>
-                                    <input type="password" class="form-control @error('kata_sandi') is-invalid @enderror" name="kata_sandi" id="kata_sandi" placeholder="Kata Sandi" required >
-                                    @error('kata_sandi')
+                                    <label class="label" for="password">Kata Sandi</label>
+                                    <input type="password" class="form-control @error('password') is-invalid @enderror" name="password" id="password" placeholder="Kata Sandi" required >
+                                    @error('password')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
@@ -95,19 +95,6 @@
 
                                 <div class="form-group">
                                     <button type="submit" class="form-control btn btn-primary rounded submit px-3">Sign Up</button>
-                                </div>
-                                <div class="form-group d-md-flex">
-                                    <div class="w-50 text-left">
-                                        <label class="checkbox-wrap checkbox-primary mb-0">Remember Me
-											<input type="checkbox" name="rememberMe" id="rememberMe" value="remember">
-											<span class="checkmark"></span>
-										</label>
-                                    </div>
-
-                                    <!-- lupa ps
-                                    <div class="w-50 text-md-right">
-                                        <a href="#">Forgot Password</a>
-                                    </div> -->
                                 </div>
                             </form>
 

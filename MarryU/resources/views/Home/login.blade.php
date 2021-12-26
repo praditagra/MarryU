@@ -30,20 +30,32 @@
                               </div>
                             @endif
 
-                            <!-- form login -->
-                            <form action="#" class="signin-form">
-                                <div class="form-group mb-3">
-                                    <label class="label" for="name">Username</label>
-                                    <input type="text" id="id_user" name="id_user" class="form-control" placeholder="Username" required>
-                                </div>
+                            @if(session()->has('loginError'))
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                {{ session('loginError') }}
+                              </div>
+                            @endif
 
+                            <!-- form login -->
+                            <form action="{{ route('Login') }}" method="POST" class="signin-form">
+                                @csrf
                                 <div class="form-group mb-3">
-                                    <label class="label" for="password">Kata Sandi</label>
-                                    <input type="password" class="form-control" name="kata_sandi" id="kata_sandi" placeholder="Kata Sandi" required>
+                                    <label class="label" for="email">Email</label>
+                                    <input type="email" id="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="name@example.com"   required autofocus>
+                                    @error('email')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                                </div>
+                                
+                                <div class="form-group mb-3">
+                                    <label class="label" for="password">Password</label>
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" class="form-control btn btn-primary rounded submit px-3">
-                                    <a style="color:white" href="/admin">Sign In</a></button>
+                                    <p style="color:white">Sign In</p></button>
                                 </div>
                                 <div class="form-group d-md-flex">
                                     <div class="w-50 text-left">

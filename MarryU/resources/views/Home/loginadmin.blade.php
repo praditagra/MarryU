@@ -28,13 +28,13 @@
                             <!-- form login -->
                             <form action="#" class="signin-form">
                                 <div class="form-group mb-3">
-                                    <label class="label" for="name">Username</label>
-                                    <input type="text" class="form-control" placeholder="Username" required>
+                                    <label class="label" for="email">Email</label>
+                                    <input type="email" class="form-control" placeholder="name@example.com" required>
                                 </div>
 
                                 <div class="form-group mb-3">
                                     <label class="label" for="password">Kata Sandi</label>
-                                    <input type="password" class="form-control" placeholder="Kata Sandi" required>
+                                    <input type="password" name= "password" class="form-control" placeholder="Kata Sandi" required>
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" class="form-control btn btn-primary rounded submit px-3">Sign In</button>
