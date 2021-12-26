@@ -1,7 +1,7 @@
 @extends('Master')
 
-@section('page')
-Home
+@section('booking')
+active
 @endsection
 
 @section('webpage')
