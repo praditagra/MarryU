@@ -55,8 +55,6 @@
                             </form>
 
                             <!-- ke halaman registrasi -->
-                            <p class="text-center">Login Sebagai 
-                                <a href="/login">User</a></p>
 
                                 <br>
                                 <p class="text-center"><a href="/">Kembali ke Landing Page</a></p>

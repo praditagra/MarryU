@@ -24,6 +24,11 @@
                                     <h3 class="mb-4">Sign In</h3>
                                 </div>
                             </div>
+                            @if(session()->has('registered'))
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                {{ session('registered') }}
+                              </div>
+                            @endif
 
                             <!-- form login -->
                             <form action="#" class="signin-form">
@@ -57,9 +62,8 @@
 
                             <!-- ke halaman registrasi -->
                             <p class="text-center">Belum Punya Akun?
-                                <a href="/registrasi">Sign Up</a></p>
-                            <p class="text-center">Login Sebagai
-                                <a href="/loginadmin">Admin</a></p>
+                                <a href="{{ route('Index.Regist') }}">Sign Up</a></p>
+
 
                                 <br>
                                 <p class="text-center"><a href="/">Kembali ke Landing Page</a></p>

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,9 +25,9 @@ Route::get('/loginadmin', function () {
     return view('Home.loginadmin');
 });
 
-Route::get('/registrasi', function () {
-    return view('Home.registrasi');
-});
+Route::get('/registrasi', [UserController::class, "regist_index"])->name('Index.Regist');
+Route::post('/registrasi', [UserController::class, "regist"])->name('Regist');
+
 
 Route::get('/products', function () {
     return view('Home.products');
